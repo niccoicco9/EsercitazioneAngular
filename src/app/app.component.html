@@ -1,0 +1,5 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <app-header (emitter)="funzionePropagazione($event)" [datiCognome]="cognome"></app-header>
+    <app-body [datiPersona]="datiModello" (cognomeEmitter)="funzionePropagazioneCognome($event)"></app-body>
+</div>

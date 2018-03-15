@@ -1,0 +1,23 @@
+.riga{
+    display: flex;
+    flex-direction: row;
+
+    label{
+        margin:0px 10px;
+    }
+}
+
+.titolo{
+    display: flex;
+    align-self: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.itemArray{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}

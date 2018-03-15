@@ -1,0 +1,42 @@
+<app-menu-navigazione></app-menu-navigazione>
+<div class="riga" *ngIf="informazioniPersona.fatto">
+  <label>Nome: </label>
+  <div>{{informazioniPersona.nome}}</div>
+  <label>Cognome: </label>
+  <div>{{datiCognome}}</div>
+</div>
+<input type="text" [(ngModel)]="informazioniPersona.nome" placeholder="Nome" *ngIf="informazioniPersona.fatto">
+
+<div class="riga">
+  <label>Anni: </label>
+  <div>{{informazioniPersona.anni}}</div>
+</div>
+<input type="text" [(ngModel)]="informazioniPersona.anni" placeholder="Anni">
+
+<div>
+  <label>Messaggi: {{messaggiDaiComponenti}}</label>
+</div>
+
+<div class="riga">
+  <label for="idFatto">Variabile booleana: </label>
+  <input type="checkbox" name="idFatto" id="idFatto" [(ngModel)]="informazioniPersona.fatto">
+</div>
+<button class="btn btn-primary" (click)="cambiaValoreVariabileFatto()">Cliccami</button>
+<div>
+  <span class="badge">{{notifiche}}</span>
+  <label>Numero di post</label>
+</div>
+<div>
+  <span class="badge">{{numeroCommenti}}</span>
+  <label>Numero totale di commenti</label>
+</div>
+<div>
+  <span class="badge">{{numeroAlbums}}</span>
+  <label>Numero album</label>
+</div>
+<div>
+  <span class="badge">{{numeroFotografie}}</span>
+  <label>Numero foto pubblicate</label>
+</div>
+<div class="titolo">ARRAY DI STRINGHE</div>
+<div *ngFor="let stringa of arrayStringhe" class="itemArray">{{stringa}}</div>

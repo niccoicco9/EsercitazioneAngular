@@ -1,0 +1,25 @@
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Inserisci un nuovo post</legend>
+    <div class="form-group">
+      <label for="title" class="col-lg-2 control-label">Title</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="title" name="title" placeholder="Titolo del post" [(ngModel)]="nuovoPost.title">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="body" class="col-lg-2 control-label">Title</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="body" name="body" placeholder="Corpo del post" [(ngModel)]="nuovoPost.body">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-12 divBottoni">
+        <button type="reset" class="btn btn-default">Ripristina</button>
+        <button type="button" class="btn btn-primary" (click)="inviaNuovoPost()">Inoltra post</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
